@@ -100,14 +100,22 @@ class _ChatScreenState extends State<ChatScreen> {
       ),
       body: Padding(
         padding: const EdgeInsets.only(bottom: 8, left: 8, right: 8),
-        child: ListView.builder(
-          itemCount: messages.length,
-          reverse: true,
-          itemBuilder: (context, index) {
-            final Message message = messages.reversed.elementAt(index);
+        child: DecoratedBox(
+          decoration: const BoxDecoration(
+              gradient: LinearGradient(
+            colors: [Colors.purple, Colors.blue],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          )),
+          child: ListView.builder(
+            itemCount: messages.length,
+            reverse: true,
+            itemBuilder: (context, index) {
+              final Message message = messages.reversed.elementAt(index);
 
-            return MessageBubble(message);
-          },
+              return MessageBubble(message);
+            },
+          ),
         ),
       ),
     );
