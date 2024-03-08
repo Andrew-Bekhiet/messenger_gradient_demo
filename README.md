@@ -249,9 +249,9 @@ class MessageBubble extends StatelessWidget {
 }
 ```
 
-MessageBubble takse the Message object, then depending on the senderIsMe property, it will align the message to the right or left of the screen using `Align` widget and change the color of the message bubble with the `decoration` property of the `Container` widget
+MessageBubble takes the Message object, then depending on the senderIsMe property, it will align the message to the right or left of the screen using `Align` widget and change the color of the message bubble with the `decoration` property of the `Container` widget
 
-You can notice thaat I've added a ConstrainedBox to the Container, this is to limit the width of the message bubble to 80% of the screen width
+You can notice that I've added a ConstrainedBox to the Container, this is to limit the width of the message bubble to 80% of the screen width
 
 Now we need to add the Message model, let's create a new file `lib/models/message.dart`
 
@@ -390,7 +390,7 @@ We can do the same effect in flutter, but with a different approach
 Instead to creating white elements to hide the gradient, we will use a combination of BlendModes
 
 Specifically, we will use the `dstOut` BlendMode to make the opaque message bubble transparent on opaque background,
-then we will use `srcOut` to make the message bubble surronding background white and make the message bubble transparent
+then we will use `srcOut` to make the message bubble surrounding background white and make the message bubble transparent
 
 You can play with different BlendModes to achieve different effects and understand how they work
 
