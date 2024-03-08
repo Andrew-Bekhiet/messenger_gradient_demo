@@ -92,9 +92,9 @@ class _ChatScreenState extends State<ChatScreen> {
       appBar: AppBar(
         flexibleSpace: const SafeArea(
           child: UserInfo(
-            name: 'Chat',
-            subtitle: 'with Flutter',
-            imageUrl: 'https://i.pravatar.cc/150?u=someuser@example.com',
+            name: 'Andrew Bekhiet',
+            subtitle: 'Flutter Developer',
+            imageUrl: 'https://avatars.githubusercontent.com/u/40571928',
           ),
         ),
       ),
