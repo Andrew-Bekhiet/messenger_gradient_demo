@@ -102,11 +102,12 @@ class _ChatScreenState extends State<ChatScreen> {
         padding: const EdgeInsets.only(bottom: 8, left: 8, right: 8),
         child: DecoratedBox(
           decoration: const BoxDecoration(
-              gradient: LinearGradient(
-            colors: [Colors.purple, Colors.blue],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          )),
+            gradient: LinearGradient(
+              colors: [Colors.purple, Colors.blue],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
+          ),
           child: ListView.builder(
             itemCount: messages.length,
             reverse: true,
